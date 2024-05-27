@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="input-box">
+          <label for="day"><small>DAY</small></label>
+          <input
+            type="number"
+            id="day"
+            class="month"
+            placeholder="DD"
+            required
+          />
+          <span class="error_day"> </span>
+          <!-- <small class="emptyerror">must br fill</small> -->
+          <label for="month"><small>MONTH</small></label>
+          <input
+            type="number"
+            id="month"
+            class="month"
+            placeholder="MM"
+            required
+          />
+          <span class="error_month"></span>
+
+          <label for="year"><small>YEAR</small></label>
+          <input
+            type="number"
+            id="year"
+            class="month"
+            placeholder="YYY"
+            required
+          />
+          <span class="error_year"></span>
+        </div>
+        <!--end-input-box-->
+        <div>
+          <button type="submit" class="sumbit_btn">
+            <img src="icon-arrow (1).svg" alt="arrow-icon" />
+          </button>
+          <hr />
+        </div>
+        <main>
+          <div><span class="displayyear">- -</span>years</div>
+          <div><span class="displaymonth">- -</span>months</div>
+          <div><span class="displayday">- -</span>days</div>
+        </main>
+      </div>
+      <!--end content-->
+    </div>
+    <!--end container-->
+    <script src="index.js"></script>
+  </body>
+</html>
